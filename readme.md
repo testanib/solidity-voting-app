@@ -7,6 +7,8 @@ clone and run npm i to install dependencies for web server
 run npm run dev to start the server
 
 website hosted centrally at: https://testanib.github.io/solidity-voting-app/
+https://testanib.github.io/solidity-voting-app/dist/index.html (if link above doesnt load)
+
 website hosted on ipfs at: https://gateway.ipfs.io/ipfs/QmSU1eTZCfYY9nJDab1A894DXuN7TS8WD24UNcUz8dGSn1/
 (note ipfs can be slow to load the site)
 
