@@ -88,17 +88,18 @@ App = {
           candidatesResults.append(candidateTemplate);
 
           // Render candidate ballot option
-          //var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
-          //candidatesSelect.append(candidateOption);
+          var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
+          candidatesSelect.append(candidateOption);
         });
       }
-      //return electionInstance.voters(App.account);
-
+      return electionInstance.voters(App.account);
+    }).then(function(hasVoted) {
+      if(hasVoted) {
+        $('form').hide();
+      }
       loader.hide();
       content.show();
-    }).catch(function(error) {
-      console.warn(error);
-    });
+    })
   },
 
   castVote: function() {
